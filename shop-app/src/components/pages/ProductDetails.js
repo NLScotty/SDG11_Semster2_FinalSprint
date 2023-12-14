@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react"
-import Product from "../functional/Product";
+import Details from "../functional/Details";
 
 const ProductDetails = () => {
   const [product, setProduct] = useState([])
@@ -19,8 +19,8 @@ const ProductDetails = () => {
 
   return (
       <div>
-        <p>A Product Page</p>
-        <Product product={product}></Product>
+        <h2>Product Page</h2>
+        <Details product={product}></Details>
       </div>
     );
   };
