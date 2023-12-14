@@ -1,7 +1,7 @@
 import Product from "./Product";
 const ProductLookup = ({data}) => {
     return (
-        <div>
+        <div className="Product_Gallery">
             {data.map((product) => (
                 <Product product={product} key={product.id}/>
             ))}

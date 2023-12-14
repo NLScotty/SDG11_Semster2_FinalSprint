@@ -18,8 +18,7 @@ const ProductDetails = () => {
   },[])
 
   return (
-      <div>
-        <h2>Product Page</h2>
+      <div className="Main_Content_Area">
         <Details product={product}></Details>
       </div>
     );

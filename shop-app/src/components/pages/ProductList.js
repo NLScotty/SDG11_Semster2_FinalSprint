@@ -17,8 +17,7 @@ const ProductList = () => {
   },[])
 
     return (
-      <div>
-        The Product List
+      <div className="Main_Content_Area">
         <ProductLookup data = {productList}></ProductLookup>
       </div>
     );
