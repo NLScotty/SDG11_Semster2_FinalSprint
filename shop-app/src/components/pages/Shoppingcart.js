@@ -1,11 +1,17 @@
-import React, { useState } from 'react';
 import CartDisplay from '../functional/CartDisplay';
+import useLocalStorage from '../hooks/useLocalStorage'; // Adjust path as necessary
+import '../../ShoppingCart.css'
 
 export const ShoppingCartProvider = () => {
-    const [cartItems, setCartItems] = useState(JSON.parse(localStorage.getItem("cart" || "[]")));
-    console.log(cartItems)
-    //function that allows one to remove item from cart, invoking setCartItems
+    const [cartItems, setCartItems] = useLocalStorage("cart");
+ 
+    // Function to remove an item from the cart
+    const removeFromCart = (itemId) => {
+        const updatedCartItems = cartItems.filter(item => item.id !== itemId);
+        setCartItems(updatedCartItems);
+    };
+ 
     return(
-        <CartDisplay cart={cartItems}></CartDisplay>
+        <CartDisplay cart={cartItems} onRemoveItem={removeFromCart}></CartDisplay>
     );
 };

@@ -3,8 +3,9 @@ import NavBar from "./components/functional/Navbar";
 import ProductList from "./components/pages/ProductList";
 import './App.css';
 import ProductDetails from "./components/pages/ProductDetails";
-import { ShoppingCartProvider, ShoppingCartContext } from "./components/pages/Shoppingcart";
-//import Checkout from "./components/pages/Checkout";
+import { ShoppingCartProvider} from "./components/pages/Shoppingcart";
+import Checkout from "./components/pages/Checkout";
+import OrderComplete from "./components/pages/OrderCompletePage";
 
 function App() {
   return (
@@ -14,8 +15,9 @@ function App() {
         <Route path="/" element={<p>Index Page</p>}></Route>
         <Route path="/list" element={<ProductList></ProductList>}></Route>
         <Route path="/product/:id" element={<ProductDetails></ProductDetails>}></Route>
-        <Route path="/cart" element={<ShoppingCartProvider children></ShoppingCartProvider>}></Route>
-        <Route path="/check" element={"FOO"}></Route>
+        <Route path="/cart" element={<ShoppingCartProvider></ShoppingCartProvider>}></Route>
+        <Route path="/check" element={<Checkout></Checkout>}></Route>
+        <Route path="/complete" element={<OrderComplete></OrderComplete>}></Route>
       </Routes>
     </Router>
   );
