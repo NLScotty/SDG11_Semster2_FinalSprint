@@ -1,0 +1,113 @@
+/* General Styles for Checkout Page */
+.checkout {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+.checkout h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.checkout form {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkout label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.checkout input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.checkout input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0,123,255,.25);
+}
+
+.checkout button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.checkout button:hover {
+    background-color: #218838;
+}
+
+/* Order Summary Styles */
+.order-summary {
+    margin-top: 30px;
+    padding: 15px;
+    border-top: 1px solid #ddd;
+}
+
+.order-summary h3 {
+    margin-bottom: 15px;
+}
+
+.order-summary ul {
+    list-style: none;
+    padding: 0;
+}
+
+.order-summary li {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #ccc;
+}
+
+/* Success Message Styles */
+.checkout-success {
+    text-align: center;
+    padding: 40px;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+
+/* Disabled Button Styles */
+.checkout button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Improved Order Summary */
+.order-summary li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order-summary span {
+    margin-right: 10px;
+}
+
+/* Responsive Form Inputs */
+@media (max-width: 600px) {
+    .checkout input, .checkout button {
+        width: 100%;
+    }
+}
+
+/* Additional Styling for Form Input Validation */
+/* You can add more styles here based on specific validation states */
