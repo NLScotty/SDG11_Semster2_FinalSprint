@@ -13,15 +13,21 @@ a:hover{
 img{
     width: 100%;
     height: 100%;
+    border-radius: 4px;
+}
+.Page{
+    height: 100%;
+    width: 100%;
 }
 
 .Desktop_Nav_Bar{
     background-color: rgb(50, 50, 50);
     color: rgb(220, 220, 220);
     display: flex;
-    margin-left: -10px;
-    margin-right: -10px;
+    margin-left: -8px;
+    margin-right: -8px;
     margin-top: -10px;
+    height: 85px;
 }
 .Desktop_Nav_Bar_Banner{
     flex-grow: 6;
@@ -43,8 +49,125 @@ img{
     padding-top: 10px;
 }
 .Desktop_Nav_Bar_Button:hover{
-    background-color: rgb(220, 220, 220);;
+    background-color: rgb(220, 220, 220);
     color: rgb(50, 50, 50);
+}
+
+.Mobile_Nav_Bar{
+    display: flex;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-top: -8px;
+    height: 80px;
+    display: none;
+}
+.Mobile_Nav_Menu_Button{
+    padding-top: 10px;
+    width: 80px;
+    height: 70px;
+    background-color: rgb(50, 50, 50);
+    border: solid;
+    border-color: rgb(220, 220, 220);
+    border-width: 2px;
+}
+.Mobile_Nav_Menu_Content{
+    display: none;
+    position: absolute;
+    background-color: rgb(50, 50, 50);
+    min-width: 160px;
+    z-index: 1;
+}
+.Mobile_Nav_Bar_Header{
+    background-color: rgb(50, 50, 50);
+    color: rgb(220, 220, 220);
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    font-size: x-large;
+    height: 70px;
+    border: solid;
+    border-color: rgb(220, 220, 220);
+    border-width: 2px 2px 2px 0px;
+}
+.Mobile_Nav_Bar_Button{
+    width: 100%;
+    height: 100%;
+    color: rgb(220, 220, 220);
+    text-decoration: none;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border: solid;
+    border-color: rgb(220, 220, 220);
+    border-width: 1px;
+}
+.Mobile_Nav_Bar_Button:hover{
+    background-color: rgb(220, 220, 220);
+    color: rgb(50, 50, 50);
+}
+.bar{
+    margin: auto;
+    margin-top: 10px;
+    width: 50px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: rgb(220, 220, 220);
+}
+
+.Home_Page_Back_Drop{
+    background: linear-gradient(45deg , #ff0000 10%,transparent 11%, transparent 89% , #ff0000 90%),linear-gradient(135deg , #ff0000 10%,transparent 11%, transparent 89% , #ff0000 90%),radial-gradient(circle, transparent 25%, #ffffff  26%),linear-gradient(45deg, transparent 46%, #ff0000 47%, #ff0000 52%, transparent 53%), linear-gradient(135deg, transparent 46%, #ff0000 47%, #ff0000 52%, transparent 53%);
+    background-size: 3em 3em;
+    background-color: #ffffff;
+    opacity: 1 ;
+    position: absolute;
+    top: 84px;
+    margin-left: -8px;
+    bottom: 0;
+    width: 100%; 
+}
+.Home_Page_Banner_Outter{
+    background: linear-gradient(90deg, transparent 50%, #43693c 50%),linear-gradient(to bottom, transparent 50%, #43693c80 50%);
+    background-size: 4em 4em;
+    background-color: #679365;
+    opacity: 1;
+    width: 900px;
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 18px;
+    border: black;
+    border-style: solid;
+    border-width: 1.5px;
+}
+.Home_Page_Banner_Inner{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border: #ffffff;
+    border-style: double;
+    border-width: 20px;
+    color: #ffffff;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.Home_Page_Button{
+    width: 200px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    margin: auto;
+    border-radius: 20px;
+    background-color: #ff0000;
+    color: #ffffff ;
+    border: black;
+    border-style: solid;
+    border-left-width: .5px;
+    border-right-width: .5px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    text-shadow: none;
+}
+.Home_Page_Button:hover{
+    background-color: #ffffff;
+    color: #ff0000;
 }
 
 .Main_Content_Area{
@@ -61,6 +184,14 @@ img{
 .Product_Gallery_Item{
     text-align: center;
     width: 300px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+.Product_Gallery_Item:hover{
+    background-color: #dddddd;
 }
 .Gallery_Image_Container{
     height: 250px;
@@ -74,12 +205,42 @@ img{
     color: rgb(80, 80, 80);
 }
 
+.Details_Image_Container{
+    width: 600px;
+    height: 500px;
+    margin: auto;
+}
+.Details_Item_Details{
+    max-width: 560px;
+    margin: 20px auto;
+    padding: 20px;
+    padding-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+.Details_Add_To_Cart{
+    width: 300px;
+    margin: auto;
+}
+
 @media only screen and (max-width: 1000px) {
     .Main_Content_Area{
         width: 700px
     }
     .Product_Gallery{
         grid-template-columns: 50% 50%;
+    }
+    .Home_Page_Banner_Outter{
+        width: 650px;
+    }
+}
+@media only screen and (max-width: 830px) {
+    .Mobile_Nav_Bar{
+        display: flex;
+    }
+    .Desktop_Nav_Bar{
+        display: none;
     }
 }
 
@@ -89,5 +250,14 @@ img{
     }
     .Product_Gallery{
         display: block;
+    }
+    .Home_Page_Banner_Outter{
+        width: 350px;
+    }
+}
+
+@media only screen and (max-width: 625px) {
+    .Home_Page_Banner_Outter{
+        width: 350px;
     }
 }

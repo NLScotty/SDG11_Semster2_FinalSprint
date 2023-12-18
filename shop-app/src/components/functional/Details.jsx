@@ -38,13 +38,17 @@ const Details = ({product}) => {
     return(
         <div>
             <div className="Details_Image_Container">
-                <img src={product.image} width={300} height={300} alt={product.name}></img>
+                <img src={product.image} alt={product.name}></img>
             </div>
-            <h3>{product.name}</h3>
-            <p>Price: {product.price} </p>
-            <p>Description: {product.description} </p>
-            <input type="number" id="qty" min="1"></input>
-            <button id="add_to_cart" onClick={()=>addToCart()}>Add To Cart</button>
+            <div className="Details_Item_Details">
+                <h3>{product.name}</h3>
+                <p>Price: {product.price} </p>
+                <p>Description: {product.description} </p>
+                <div className="Details_Add_To_Cart">
+                    <input type="number" id="qty" min="1"></input>
+                    <button id="add_to_cart" onClick={()=>addToCart()}>Add To Cart</button>
+                </div>
+            </div>
         </div>
     )
 }
