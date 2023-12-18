@@ -254,6 +254,10 @@ img{
     .Home_Page_Banner_Outter{
         width: 350px;
     }
+    .Details_Image_Container{
+        width: 300px;
+        height: 250px;
+    }
 }
 
 @media only screen and (max-width: 625px) {

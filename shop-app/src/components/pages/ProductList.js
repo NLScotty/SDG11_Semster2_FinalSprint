@@ -4,7 +4,7 @@ import ProductLookup from "../functional/ProductLookup";
 const ProductList = () => {
   const [productList, setList] = useState([])
   const cart = JSON.parse(localStorage.getItem("cart" || "[]"))  
-  console.log(cart)
+  console.log(JSON.stringify(cart))
 
   async function fetchProducts(){
     const response = await fetch(`http://localhost:5000/products`)
