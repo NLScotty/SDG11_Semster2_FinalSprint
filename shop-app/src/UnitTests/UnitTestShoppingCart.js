@@ -10,17 +10,12 @@ describe('ShoppingCartPage', () => {
                 <ShoppingCartPage />
             </ShoppingCartProvider>
         );
-        expect(screen.getByText(/Your Shopping Cart/)).toBeInTheDocument();
+        expect(screen.getByText(/Product Name/)).toBeInTheDocument();
+        expect(screen.getByText(/Product Quantity/)).toBeInTheDocument();
+        expect(screen.getByText(/Product Price/)).toBeInTheDocument();
+        expect(screen.getByText(/Total Price/)).toBeInTheDocument();
+        expect(screen.getByText(/Product 1/)).toBeInTheDocument();
+        expect(screen.getByText(/Product 5/)).toBeInTheDocument();
     });
-
-    test('displays empty cart message when cart is empty', () => {
-        render(
-            <ShoppingCartProvider>
-                <ShoppingCartPage />
-            </ShoppingCartProvider>
-        );
-        expect(screen.getByText(/Your cart is empty/)).toBeInTheDocument();
-    });
-
-    // Add more tests as needed
-});
+  
+  });

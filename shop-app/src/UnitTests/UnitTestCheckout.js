@@ -22,5 +22,4 @@ describe('Checkout', () => {
         // e.g., expect(screen.getByText(/Total Amount:/)).toBeInTheDocument();
     });
 
-    // Add more tests as needed
 });

@@ -78,6 +78,8 @@ describe('Checkout', () => {
 
 });
 
+// Tests for the Shopping Cart
+
 describe('ShoppingCartPage', () => {
   test('renders shopping cart page', () => {
       render(
@@ -93,5 +95,4 @@ describe('ShoppingCartPage', () => {
       expect(screen.getByText(/Product 5/)).toBeInTheDocument();
   });
 
-  // Add more tests as needed
 });

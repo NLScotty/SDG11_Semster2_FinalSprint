@@ -35,6 +35,7 @@ const Details = ({product}) => {
             navigate('/list')
         }
     }
+    // Renders the Page
     return(
         <div>
             <div className="Details_Image_Container">

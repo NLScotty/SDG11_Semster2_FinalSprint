@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 const NavBar = () => {
+  // Used to hide and display the mobile nav menu
   function displayOverlay(){
     let overlay = document.querySelector('.Mobile_Nav_Menu_Content');
     if(overlay.style.display === "none"){
@@ -8,6 +9,7 @@ const NavBar = () => {
       overlay.style.display = "none";
     }
   }
+  // We render both the Desktop and Mobile Navbars, but we use CSS to hide/display one of them as needed
   return (
     <>
     <div className="Desktop_Nav_Bar">

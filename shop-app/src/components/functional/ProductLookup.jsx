@@ -1,4 +1,5 @@
 import Product from "./Product";
+// An Element that consists of many products
 const ProductLookup = ({data}) => {
     return (
         <div className="Product_Gallery">

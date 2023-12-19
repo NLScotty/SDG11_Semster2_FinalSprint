@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+// Used to display each product
 const Product = ({product}) => {
     return(
         <div className="Product_Gallery_Item">
