@@ -223,7 +223,10 @@ img{
     width: 300px;
     margin: auto;
 }
-
+.Fetch_Message{
+    margin: auto;
+    text-align: center;
+}
 @media only screen and (max-width: 1000px) {
     .Main_Content_Area{
         width: 700px
